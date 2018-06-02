@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="com.lew.byiq" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
-    <name>By IQ APP</name>
+    <name>RAICnet APP</name>
     <description>
         La App de ipcinmo.com para controlar sus servicios desde tu smartphone
     </description>
@@ -8,7 +8,7 @@
         Weblum ES
     </author>
 	
-	<preference name="permissions" value="none" />
+	 <preference name="permissions" value="none" />
     <preference name="orientation" value="default" />
     <preference name="target-device" value="universal" />
     <preference name="fullscreen" value="false" />
@@ -23,6 +23,10 @@
     <preference name="android-minSdkVersion" value="14" />
     <preference name="android-installLocation" value="auto" />
 	<preference name="DisallowOverscroll" value="false"/> 
+	
+	<feature name="NetworkStatus">
+		<param name="android-package" value="org.apache.cordova.networkinformation.NetworkManager" />
+	</feature>
 	
 	<icon src="icon.png" />
     <splash src="screen.png" />
